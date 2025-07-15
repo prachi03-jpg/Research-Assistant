@@ -4,10 +4,12 @@ from routes.assistant import router as assistant_router
 from dotenv import load_dotenv
 from routes.challenge import router as challenge_router
 
+import openai
+import os
 
 # Load environment variables from .env file
 load_dotenv()
-
+openai.api_key = os.getenv("OPENAI_API_KEY")
 app = FastAPI()
 
 # React frontend dev server origin (update for production)
@@ -30,4 +32,5 @@ app.add_middleware(
 
 # Register assistant routes
 app.include_router(assistant_router, prefix="/api/assistant")
+
 app.include_router(challenge_router, prefix="/api/challenge")

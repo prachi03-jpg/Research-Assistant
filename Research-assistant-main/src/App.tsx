@@ -90,6 +90,8 @@ function App() {
 
   return (
     <div className="min-h-screen bg-black text-white relative overflow-hidden">
+
+
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -124,9 +126,9 @@ function App() {
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                  RISA
+                  Scholarly.AI
                 </h1>
-                <p className="text-sm text-gray-400">Research Intelligence & Summarization Assistant</p>
+                <p className="text-sm text-gray-400">AI-Powered Summaries, Deep Questions, Clear Knowledge</p>
               </div>
             </div>
             
@@ -265,6 +267,10 @@ function App() {
           </div>
         )}
       </div>
+      <footer className="text-center py-6 border-t border-gray-300 mt-12 text-sm text-gray-500">
+  © 2025 Prachi Shreelochan. Built with 💡 and AI.
+</footer>
+
     </div>
   );
 }

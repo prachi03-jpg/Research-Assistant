@@ -7,20 +7,41 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Node.js
+node_modules/
+dist/
+dist-ssr/
 *.local
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+backend/venv/
+
+# Build outputs
+build/
+*.zip
+
+# Env
+.env
+.env.*
+
+# System files
 .DS_Store
+Thumbs.db
+
+# IDE/Editor files
+.vscode/
+!.vscode/extensions.json
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-.env
-beckend/venv/
+
+# PDF (optional — if you don’t want to push user-uploaded files)
+*.pdf
