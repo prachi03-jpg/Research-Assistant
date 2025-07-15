@@ -23,7 +23,7 @@ llm = HuggingFaceEndpoint(
 model = ChatHuggingFace(llm= llm)
 
 vector_store = Chroma(
-    embedding_function= HuggingFaceEmbeddings(model_name= 'sentence-transformers/all-MiniLM-L6-v2'),
+    embedding_function= HuggingFaceEmbeddings(model_name="sentence-transformers/paraphrase-MiniLM-L3-v2"),
     collection_name= "Features"
 )
 
